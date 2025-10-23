@@ -6,7 +6,6 @@
   <title>省錢情報站｜10/25 優惠碼</title>
   <meta name="description" content="點一下自動複製優惠碼並開啟頁面，進站後直接貼上即可。">
   <meta name="format-detection" content="telephone=no" />
-  <!-- Open Graph（社群預覽，可自行調整） -->
   <meta property="og:title" content="省錢情報站｜10/25 優惠碼" />
   <meta property="og:description" content="點一下自動複製＆跳轉，跳轉後直接貼上使用。" />
   <meta property="og:type" content="website" />
@@ -14,19 +13,11 @@
 
   <style>
     :root{
-      --bg:#0b1220;           /* 背景深藍 */
-      --card:#111827;         /* 卡片深灰藍 */
-      --muted:#9ca3af;        /* 次要文字 */
-      --text:#e5e7eb;         /* 主要文字 */
-      --brand:#22c55e;        /* 強調綠 */
-      --brand-2:#60a5fa;      /* 輔助藍 */
-      --ring: 0 0 0 0.15rem rgba(96,165,250,.35);
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --shadow-sm: 0 6px 18px rgba(0,0,0,.28);
+      --bg:#0b1220; --card:#111827; --muted:#9ca3af; --text:#e5e7eb;
+      --brand:#22c55e; --brand-2:#60a5fa; --ring:0 0 0 0.15rem rgba(96,165,250,.35);
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35); --shadow-sm:0 6px 18px rgba(0,0,0,.28);
     }
-    * { box-sizing: border-box }
-    html,body{ height:100% }
+    *{ box-sizing:border-box } html,body{ height:100% }
     body{
       margin:0;
       background:
@@ -34,103 +25,44 @@
         radial-gradient(900px 500px at 90% 10%, rgba(96,165,250,.18), transparent 60%),
         var(--bg);
       color:var(--text);
-      font:16px/1.6 ui-sans-serif, -apple-system, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Segoe UI, Roboto, Helvetica, Arial, system-ui, sans-serif;
+      font:16px/1.6 ui-sans-serif,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",Segoe UI,Roboto,Helvetica,Arial,system-ui,sans-serif;
     }
-    .container{
-      max-width:880px;
-      margin:0 auto;
-      padding:32px 20px 56px;
-    }
-    header{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      margin-bottom:22px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-    }
-    .logo{
-      width:44px;height:44px;border-radius:12px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--brand), var(--brand-2));
-      color:#0b1220;font-weight:800; box-shadow:var(--shadow-sm);
-    }
-    h1{ font-size:clamp(22px,3vw,28px); margin:0 }
-    .subtitle{ color:var(--muted); margin-top:4px }
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      backdrop-filter:saturate(130%) blur(6px);
-      -webkit-backdrop-filter:saturate(130%) blur(6px);
-      padding:18px;
-    }
-    .grid{
-      display:grid; gap:14px;
-      grid-template-columns:repeat(1, minmax(0,1fr));
-    }
-    @media (min-width:640px){ .grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
-    @media (min-width:1024px){ .grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } }
-
-    .deal{
-      background:var(--card);
-      border:1px solid rgba(255,255,255,.06);
-      padding:16px; border-radius:14px;
-      display:flex; flex-direction:column; gap:10px;
-      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-    .deal:hover{ transform:translateY(-2px); box-shadow:var(--shadow-sm); border-color:rgba(255,255,255,.12)}
-    .deal .meta{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-    }
-    .badge{
-      font-size:12px; color:#0b1220; background:linear-gradient(135deg,var(--brand), var(--brand-2));
-      padding:6px 10px; border-radius:999px; font-weight:700; letter-spacing:.3px;
-    }
-    .code{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      font-weight:700; letter-spacing:.4px;
-    }
+    .container{ max-width:880px; margin:0 auto; padding:32px 20px 56px; }
+    header{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:22px; }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .logo{ width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#0b1220;font-weight:800; box-shadow:var(--shadow-sm); }
+    h1{ font-size:clamp(22px,3vw,28px); margin:0 } .subtitle{ color:var(--muted); margin-top:4px }
+    .card{ background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); box-shadow:var(--shadow);
+      backdrop-filter:saturate(130%) blur(6px); -webkit-backdrop-filter:saturate(130%) blur(6px); padding:18px; }
+    .grid{ display:grid; gap:14px; grid-template-columns:repeat(1,minmax(0,1fr)); }
+    @media (min-width:640px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (min-width:1024px){ .grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    .deal{ background:var(--card); border:1px solid rgba(255,255,255,.06); padding:16px; border-radius:14px;
+      display:flex; flex-direction:column; gap:10px; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .deal:hover{ transform:translateY(-2px); box-shadow:var(--shadow-sm); border-color:rgba(255,255,255,.12) }
+    .deal .meta{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .badge{ font-size:12px; color:#0b1220; background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      padding:6px 10px; border-radius:999px; font-weight:700; letter-spacing:.3px; }
     .desc{ color:var(--muted) }
-    .btn{
-      appearance:none; border:0; cursor:pointer;
-      padding:12px 14px; border-radius:12px; width:100%;
-      font-weight:700; letter-spacing:.2px;
-      background:linear-gradient(135deg, rgba(34,197,94,.18), rgba(96,165,250,.18));
-      color:var(--text);
-      outline: none;
-      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
-    }
-    .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow-sm) }
-    .btn:focus-visible{ box-shadow: var(--ring) }
+    .btn{ appearance:none; border:0; cursor:pointer; padding:12px 14px; border-radius:12px; width:100%;
+      font-weight:700; letter-spacing:.2px; background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(96,165,250,.18));
+      color:var(--text); outline:none; transition:transform .12s ease, box-shadow .12s ease, background .12s ease; }
+    .btn:hover{ transform:translateY(-1px); box-shadow:var(--shadow-sm) }
+    .btn:focus-visible{ box-shadow:var(--ring) }
     .btn .small{ font-weight:500; opacity:.9; font-size:12px; margin-left:6px }
-
-    /* 社群區塊 */
-    .community{
-      margin-top:26px;
-      display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between;
-    }
+    .community{ margin-top:26px; display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between; }
     .community .text{ color:var(--muted) }
-    .cta{
-      background:linear-gradient(135deg, var(--brand), var(--brand-2));
-      color:#0b1220; font-weight:800; padding:12px 16px; border-radius:12px; border:0; cursor:pointer;
-      transition:transform .12s ease, box-shadow .12s ease; box-shadow:var(--shadow-sm);
-    }
-    .cta:hover{ transform: translateY(-1px) }
-
-    /* Toast 提示 */
-    .toast{
-      position: fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(30px);
-      background:#111827; color:var(--text);
-      border:1px solid rgba(255,255,255,.12); padding:12px 16px; border-radius:12px;
-      box-shadow:var(--shadow); opacity:0; pointer-events:none;
-      transition: opacity .2s ease, transform .2s ease;
-      max-width:88vw; text-align:center; z-index:9999;
-    }
+    .cta{ background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#0b1220; font-weight:800; padding:12px 16px;
+      border-radius:12px; border:0; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease; box-shadow:var(--shadow-sm); }
+    .cta:hover{ transform:translateY(-1px) }
+    .toast{ position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(30px); background:#111827; color:var(--text);
+      border:1px solid rgba(255,255,255,.12); padding:12px 16px; border-radius:12px; box-shadow:var(--shadow); opacity:0; pointer-events:none;
+      transition:opacity .2s ease, transform .2s ease; max-width:88vw; text-align:center; z-index:9999; }
     .toast.show{ opacity:1; transform:translateX(-50%) translateY(0) }
-    footer{
-      margin-top:28px; color:var(--muted); font-size:13px; text-align:center;
-    }
+    footer{ margin-top:28px; color:var(--muted); font-size:13px; text-align:center; }
+    .sr-only{ position:absolute; left:-9999px; }
   </style>
 </head>
 <body>
@@ -139,7 +71,7 @@
       <div class="brand">
         <div class="logo" aria-hidden="true">$</div>
         <div>
-          <h1>10/18 優惠碼</h1>
+          <h1>10/25 優惠碼</h1>
           <div class="subtitle">點一下「自動複製」＋「自動跳轉」，跳轉後直接貼上。</div>
         </div>
       </div>
@@ -147,10 +79,8 @@
 
     <!-- 優惠清單 -->
     <section class="card" aria-labelledby="deal-list-title">
-      <h2 id="deal-list-title" class="sr-only" style="position:absolute;left:-9999px">優惠清單</h2>
-      <div class="grid" id="deal-grid">
-        <!-- 以 JS 動態渲染；若想改為純 HTML，也可把下方四個 .deal 範例改為靜態 -->
-      </div>
+      <h2 id="deal-list-title" class="sr-only">優惠清單</h2>
+      <div class="grid" id="deal-grid"></div>
     </section>
 
     <!-- 社群 -->
@@ -168,17 +98,25 @@
   <div class="toast" role="status" aria-live="polite" id="toast"></div>
 
   <script>
-    // ======== 可調參數 ========
-    const redirectDelayMs = 200; // 複製成功後延遲幾毫秒再跳轉
-    const openInNewTab   = true; // 是否新分頁開啟
-    // =========================
+    // ========= 行為設定 =========
+    const redirectDelayMs = 200;      // 複製成功後延遲幾毫秒再跳轉
+    const openInNewTab   = true;      // 是否新分頁開啟
+    // ===========================
 
-    // 範例資料（可改成從後端來）
+    // ========= 折扣碼輕度混淆 =========
+    // 將每個字元 charCode 與 key 做 XOR，儲存為數字陣列，避免明碼出現在原始碼中
+    const KEY = 7; // 可自行更換
+    function enc(str){ return Array.from(str).map(ch => ch.charCodeAt(0) ^ KEY); }
+    function dec(arr){ return String.fromCharCode(...arr.map(n => n ^ KEY)); }
+
+    // 範例資料（codeEnc 為混淆後的數字陣列，頁面不會顯示也不會放到 aria-label）
     const deals = [
-      { code: "SHOCT1025",   url: "https://s.shopee.tw/BL3TAxeQd", title: "全站 $100 折 $20" },
+      { codeEnc: enc("SHOCT1025"), url: "https://s.shopee.tw/BL3TAxeQd", title: "全站 $100 折 $20" },
+      // 可再加：{ codeEnc: enc("h3m4d33grw"), url: "...", title: "..." },
     ];
+    // ==================================
 
-    // 輔助：建立節點
+    // 小工具
     const $ = sel => document.querySelector(sel);
     const create = (tag, props={}, children=[]) => {
       const el = document.createElement(tag);
@@ -192,84 +130,68 @@
       return el;
     };
 
-    // 產出卡片
+    // 產卡：不顯示折扣碼，按鈕文案也不含碼
     const grid = $('#deal-grid');
     deals.forEach(d=>{
-      const top = create('div', { class:'meta' }, [
+      const top  = create('div', { class:'meta' }, [
         create('div', { class:'badge', text:'限時優惠' }),
-        create('div', { class:'code', text:d.code, title:'點按下方按鈕即可自動複製' })
+        // 不放任何 code 元素
+        create('div', { class:'desc', text: d.title })
       ]);
-      const desc = create('div', { class:'desc', text:d.title });
       const btn  = create('button', {
         class:'btn',
-        text:'複製優惠碼並前往',
-        'data-code': d.code,
+        text:'一鍵複製並前往',
+        'data-code': JSON.stringify(d.codeEnc), // 以字串形式放混淆陣列
         'data-url': d.url,
-        'aria-label': `複製 ${d.code} 並開啟連結`
-      }, [
-        create('span', { class:'small', text:'（到站直接貼上）' })
-      ]);
-      const card = create('article', { class:'deal' }, [top, desc, btn]);
+        'aria-label':'複製優惠碼並開啟連結'
+      }, [ create('span', { class:'small', text:'（到站直接貼上）' }) ]);
+      const card = create('article', { class:'deal' }, [top, btn]);
       grid.appendChild(card);
     });
 
-    // 事件：複製後跳轉
+    // 點擊：解碼→複製→跳轉
     document.addEventListener('click', async (e)=>{
       const btn = e.target.closest('.btn');
       if(!btn) return;
-      const code = btn.getAttribute('data-code') || '';
-      const url  = btn.getAttribute('data-url')  || '#';
+
+      const encStr = btn.getAttribute('data-code');
+      const url    = btn.getAttribute('data-url') || '#';
+      let code = '';
+      try{
+        const arr = JSON.parse(encStr);
+        code = dec(arr);
+      }catch(_){ showToast('發生錯誤，請稍後再試'); return; }
 
       const copied = await copyText(code);
-      if(copied){
-        showToast(`已複製優惠碼：${code}，為你開啟頁面…`);
-      }else{
-        showToast(`請手動複製優惠碼：${code}（瀏覽器限制）`);
-      }
+      showToast(copied ? '已複製優惠碼，為你開啟頁面…' : '瀏覽器限制，請到站後手動貼上');
 
-      // 延遲跳轉：避免過快導致部分瀏覽器取消 clipboard 動作
       setTimeout(()=>{
-        if(openInNewTab){
-          window.open(url, '_blank', 'noopener,noreferrer');
-        }else{
-          window.location.assign(url);
-        }
+        if(openInNewTab) window.open(url, '_blank', 'noopener,noreferrer');
+        else window.location.assign(url);
       }, redirectDelayMs);
     });
 
     // 社群按鈕
     $('#join-btn').addEventListener('click', (e)=>{
       const url = e.currentTarget.dataset.url;
-      if(openInNewTab){
-        window.open(url, '_blank', 'noopener,noreferrer');
-      }else{
-        window.location.assign(url);
-      }
+      if(openInNewTab) window.open(url, '_blank', 'noopener,noreferrer');
+      else window.location.assign(url);
     });
 
-    // 複製工具（含降級處理）
+    // 複製（含降級處理）
     async function copyText(text){
       try{
         if(navigator.clipboard && window.isSecureContext){
           await navigator.clipboard.writeText(text);
           return true;
         }
-      }catch(_) { /* ignore */ }
-      // 非安全情境或權限被拒：降級為選取方案
+      }catch(_) {}
       try{
         const ta = document.createElement('textarea');
-        ta.value = text;
-        ta.setAttribute('readonly', '');
-        ta.style.position='fixed';
-        ta.style.left='-9999px';
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        ta.remove();
+        ta.value = text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.left='-9999px';
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
         return true;
-      }catch(_){
-        return false;
-      }
+      }catch(_){ return false; }
     }
 
     // Toast
@@ -285,14 +207,11 @@
     // 年份
     $('#y').textContent = new Date().getFullYear();
 
-    // 無障礙：提供鍵盤快速操作
+    // 無障礙：Enter 啟動
     document.addEventListener('keydown', (e)=>{
-      // Enter 在焦點於 .btn 時觸發
       if(e.key === 'Enter'){
         const active = document.activeElement;
-        if(active && active.classList.contains('btn')){
-          active.click();
-        }
+        if(active && active.classList.contains('btn')) active.click();
       }
     });
   </script>
