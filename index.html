@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>省錢情報站｜10/25 優惠碼</title>
-  <meta name="description" content="點一下自動複製優惠碼並開啟頁面，進站後直接貼上即可。">
+  <meta name="description" content="點一下自動複製優惠碼並開啟頁面，跳轉後直接貼上即可。">
   <meta name="format-detection" content="telephone=no" />
   <meta property="og:title" content="省錢情報站｜10/25 優惠碼" />
   <meta property="og:description" content="點一下自動複製＆跳轉，跳轉後直接貼上使用。" />
@@ -134,7 +134,7 @@
     const grid = $('#deal-grid');
     deals.forEach(d=>{
       const top  = create('div', { class:'meta' }, [
-        create('div', { class:'badge', text:'限時優惠' }),
+        create('div', { class:'badge', text:'數量有限' }),
         // 不放任何 code 元素
         create('div', { class:'desc', text: d.title })
       ]);
@@ -144,7 +144,7 @@
         'data-code': JSON.stringify(d.codeEnc), // 以字串形式放混淆陣列
         'data-url': d.url,
         'aria-label':'複製優惠碼並開啟連結'
-      }, [ create('span', { class:'small', text:'（到站直接貼上）' }) ]);
+      }, [ create('span', { class:'small', text:'（跳轉直接貼上）' }) ]);
       const card = create('article', { class:'deal' }, [top, btn]);
       grid.appendChild(card);
     });
